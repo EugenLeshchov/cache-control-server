@@ -1,0 +1,24 @@
+{
+  "name": "cache-control-server",
+  "version": "1.0.0",
+  "description": "Cached file storage",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/EugenLeshchov/cache-control-server.git"
+  },
+  "author": "Eugen Leshchov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EugenLeshchov/cache-control-server/issues"
+  },
+  "homepage": "https://github.com/EugenLeshchov/cache-control-server#readme"
+}
