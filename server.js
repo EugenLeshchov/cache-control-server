@@ -4,6 +4,8 @@ const express = require('express')
 
 const app = express();
 
+app.set('port', (process.env.PORT || 8080));
+
 app.get('/:name', function (req, res) {
     res.set({
         'Cache-Control': 'public, max-age=7200000',
@@ -12,6 +14,6 @@ app.get('/:name', function (req, res) {
     res.sendFile(path.join(__dirname, 'files', req.params.name));
 });
 
-app.listen(8080, function () {
-    console.log('Server is on port 8080')
+app.listen(app.get('port'), function () {
+    console.log('Server is on port', app.get('port'));
 });
